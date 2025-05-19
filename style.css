@@ -1,0 +1,100 @@
+:root {
+  --primary: #0066cc;
+  --primary-dark: #004c99;
+  --gray-light: #f2f6fa;
+  --gray: #dfe6ee;
+  --radius: 8px;
+  --font: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+html, body {
+  margin: 0;
+  font-family: var(--font);
+  background: #fff;
+  color: #222;
+}
+
+header {
+  text-align: center;
+  padding: 40px 10px 20px;
+}
+
+header img {
+  max-width: 250px;
+  width: 40%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .08);
+  border-radius: var(--radius);
+  padding: 30px;
+}
+
+h2 { margin-top: 0; }
+
+.search-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-row input {
+  flex: 1 1 200px;
+  padding: 10px 14px;
+  font-size: 16px;
+  border: 1px solid var(--gray);
+  border-radius: var(--radius);
+}
+
+.search-row button {
+  padding: 10px 22px;
+  font-size: 16px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background .2s ease;
+}
+
+.search-row button:hover {
+  background: var(--primary-dark);
+}
+
+.table-wrapper { overflow-x: auto; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: var(--primary-dark);
+  color: #fff;
+}
+
+th, td {
+  padding: 12px 14px;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) { background: var(--gray-light); }
+
+tbody tr:hover { background: #eaf2fc; }
+
+.hidden { display: none; }
+
+@media (max-width: 600px) {
+  th, td { font-size: 14px; }
+}
